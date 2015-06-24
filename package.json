@@ -1,0 +1,41 @@
+{
+  "name": "react-pack-starter",
+  "version": "1.0.0",
+  "description": "A simple react starter kit that uses npm and webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "css-loader": "^0.14.5",
+    "file-loader": "^0.8.4",
+    "grunt": "^0.4.5",
+    "harmony": "0.0.1",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.7.1",
+    "json-loader": "^0.5.2",
+    "jsx-loader": "^0.13.2",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "react": "^0.13.3",
+    "semantic-ui": "^1.12.3"
+  },
+    "scripts": {
+        "watch": "webpack-dev-server --progress --colors",
+        "build": "webpack",
+        "env": "env"
+    }
+}

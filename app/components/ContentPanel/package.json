@@ -1,0 +1,6 @@
+{
+  "name": "ContentPanel",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContentPanel.jsx"
+}
