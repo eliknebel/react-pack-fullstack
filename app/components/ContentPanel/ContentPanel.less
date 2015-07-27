@@ -2,9 +2,40 @@
 
 .ContentPanel {
     &-container {
-        margin: 0 auto;
-        padding: 10px 20px;
-        min-width: 600px;
-        overflow: auto;
+        flex: 1;
+        padding: 20px;
+        min-width: 400px;
+        overflow-y: auto;
     }
+    
+    &-row {
+        display: block;
+    }
+
+    &-row-item {
+        display: inline-block;
+    }
+    
+    
+    & .list-group-item {
+        height: 60px;
+    }
+}
+
+a.edit :hover {
+    cursor: pointer;
+}
+
+a.edit {
+    padding-left: 20px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+
+.attach-btn {
+    float: right;
+    margin-top: 10px;
 }

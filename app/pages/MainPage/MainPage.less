@@ -1,0 +1,28 @@
+@import '../../variables.less';
+
+.MainPage {
+    &-container {
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
+
+.Container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+}
+
+.col {
+    overflow: auto;
+    height: auto;
+    padding: .5rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}

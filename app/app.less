@@ -1,32 +1,17 @@
 @import 'variables.less';
 
-html {
-    height:100%;    /* make sure it is at least as tall as the viewport */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
-    height:100%; /* force the BODY element to match the height of the HTML element */
-    margin: 0px;
+    overflow-x: hidden;
 }
 
 #app {
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    /*z-index:-1; /* Remove this line if it's not going to be a background! */
-}
-
-.sizer {
-    &-vertical {
-        height: inherit;
-    }
-    &-vertical div {
-        float: left;
-    }
-    
-    &-horizontal div {
-        clear: both;
-    }
 }
