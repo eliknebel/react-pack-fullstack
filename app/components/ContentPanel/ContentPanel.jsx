@@ -1,14 +1,15 @@
 'use strict'
 
-var React = require('React');
-require('./ContentPanel.less');
+import React from 'react';
+import Component from 'app/components';
+import './ContentPanel.less';
 
-module.exports = React.createClass({displayName: 'ContentPanel',
-  render: function() {
+export default class ContentPanel extends Component {
+  render() {
     return (
-    <div className='ContentPanel-container'>
+    <div className='ContentPanel'>
     <p>Ready... Go! Get started coding something <a href="http://facebook.github.io/react/docs/tutorial.html">cool</a></p>
     </div>
     );
   }
-});
+};

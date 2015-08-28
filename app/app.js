@@ -1,12 +1,28 @@
-var React = require('React');
+/* global global */
+import React from 'react';
 
 /** Import app styles */
-require('./app.less');
-require('bootstrap/dist/css/bootstrap.css');
+import './app.less';
+import 'bootstrap/dist/css/bootstrap.css';
 
 /** Import global JS Libraries*/
-var $ = jQuery = require('jquery');
+import 'jquery';
 
-var MainPage = require('./pages/MainPage');
+/** Define App Global Constants */
+const APP = {
+	root: __dirname,
+	component: function(componentName) {
+		return __dirname + '/components/' + componentName;
+	},
+	page: function(pageName) {
+		return __dirname + '/pages/' + pageName;
+	},
+	hello: function() {
+		console.log("hello, world");
+	}
+};
+export default APP;
 
-React.render(React.createElement(MainPage, null), document.getElementById('app'));
+import Main from './pages/Main';
+
+React.render(React.createElement(Main, null), document.getElementById('app'));

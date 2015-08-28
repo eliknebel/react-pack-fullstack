@@ -4,13 +4,18 @@
   "description": "A simple react starter kit that uses npm and webpack",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack-dev-server --progress --colors",
-    "build": "rm -rf dist && cp index.html dist/index.html && webpack",
-    "env": "env"
+    "env": "env",
+    "watch": "./tasks/watch.sh",
+    "prewatch": "./tasks/setenv.sh",
+    "postwatch": "./tasks/cleanup.sh",
+    "build": "./tasks/build.sh",
+    "prebuild": "./tasks/setenv.sh",
+    "clean": "./tasks/clean.sh"
   },
   "author": "Eli Knebel",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^5.8.23",
     "babel-core": "^5.5.8",
     "babel-loader": "^5.1.4",
     "coffee-loader": "^0.7.2",

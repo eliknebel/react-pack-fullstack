@@ -1,14 +1,15 @@
 'use strict'
 
-var React = require('React');
-require('./Header.less');
+import React from 'react';
+import Component from 'app/components';
+import './Header.less';
 
-module.exports = React.createClass({displayName: 'Header',
-  render: function() {
+export default class Header extends Component {
+  render() {
     return (
     <div className='Header-container'>
     <h1>React-Pack-Starter</h1>
     </div>
     );
   }
-});
+};
