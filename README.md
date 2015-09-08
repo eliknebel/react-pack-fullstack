@@ -7,7 +7,7 @@ Why use a million npm packages to get started with react? This barebones kit wil
 
 Includes bootstrap and starter components as examples.
 
-##Usage:
+###Usage:
 Install dependencies: `npm install`
 
 Build application: `npm run build`
