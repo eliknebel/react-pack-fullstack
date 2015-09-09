@@ -1,9 +1,9 @@
 module.exports = {
     entry: {
-        app: "./app/app.js"
+        app: "./client/app.js"
     },
     output: {
-        path: './dist',
+        path: './assets/app',
         filename: 'bundle.js'
     },
     module: {

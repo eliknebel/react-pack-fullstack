@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # create a symbolic link called 'app' to the current application
-ln -nsf `pwd`/app `pwd`/node_modules/
+ln -nsf `pwd`/client `pwd`/node_modules/app

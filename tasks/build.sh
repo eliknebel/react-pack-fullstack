@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cp ./app/index.html ./index.html
+cp ./client/index.html ./index.html
 
 webpack
