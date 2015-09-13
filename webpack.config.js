@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-        app: "./client/app.js"
+        app: "./client/app.jsx"
     },
     output: {
         path: './assets/app',
