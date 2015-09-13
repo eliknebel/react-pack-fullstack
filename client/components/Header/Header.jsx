@@ -8,7 +8,7 @@ export default class Header extends Component {
   render() {
     return (
     <div className='Header-container'>
-    <h1>React-Pack-Starter</h1>
+    <h1>React-Pack-Fullstack</h1>
     </div>
     );
   }
