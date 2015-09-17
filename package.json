@@ -49,13 +49,11 @@
   },
   "scripts": {
     "env": "env",
-    "watch": "./tasks/watch.sh",
-    "postinstall": "./tasks/setenv.sh",
-    "build": "./tasks/build.sh",
-    "prebuild": "./tasks/setenv.sh",
-    "clean": "./tasks/clean.sh",
-    "debug": "./tasks/build.sh && node debug app.js",
-    "start": "./tasks/build.sh && node app.js"
+    "watch": "cp ./client/index.html ./index.html && webpack-dev-server --progress --colors",
+    "build": "cp ./client/index.html ./index.html && webpack",
+    "clean": "rm ./index.html && rm -rf ./assets/app",
+    "debug": "cp ./client/index.html ./index.html && webpack && node debug app.js",
+    "start": "cp ./client/index.html ./index.html && webpack && node app.js"
   },
   "author": "Eli Knebel",
   "license": "",
