@@ -26,7 +26,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx'],
         alias: {
-            "app": __dirname + "/client"
+            "app": __dirname + "/client",
+            "components": __dirname + "/client/components",
+            "pages": __dirname + "/client/pages"
         }
     }
 };

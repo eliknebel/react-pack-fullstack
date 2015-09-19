@@ -4,11 +4,16 @@ import React from 'react';
 import Component from 'app/components';
 import './ContentPanel.less';
 
+import ContactCard from 'components/ContactCard';
+import ContactsList from 'components/ContactsList';
+
 export default class ContentPanel extends Component {
   render() {
     return (
     <div className='ContentPanel'>
-    <p>Ready... Go! Get started coding something <a href="http://facebook.github.io/react/docs/tutorial.html">cool</a></p>
+      <h3>Example Address Book (Using Flux)</h3>
+      <ContactCard />
+      <ContactsList />
     </div>
     );
   }
