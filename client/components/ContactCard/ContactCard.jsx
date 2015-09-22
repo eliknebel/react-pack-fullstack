@@ -9,6 +9,7 @@ import AddressBookActions from 'app/actions/AddressBookActions';
 import userIcon from './images/user.png';
 
 export default class ContactCard extends Component {
+  /** Constructor */
   constructor(props) {
     super(props);
     
@@ -19,6 +20,7 @@ export default class ContactCard extends Component {
     }
   }
   
+  /** React Render */
   render() {
     return (
     <div className='ContactCard'>
@@ -44,6 +46,7 @@ export default class ContactCard extends Component {
     
   }
   
+  /** Event Handlers */
   onNameValueChange(e) {
     console.log("ContactCard view fired event 'nameValueChanged', update state: name");
     this.setState({

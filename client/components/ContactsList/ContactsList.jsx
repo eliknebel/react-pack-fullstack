@@ -8,11 +8,13 @@ import FluxyMixin from 'alt/mixins/FluxyMixin';
 import AddressBookStore from 'app/stores/AddressBookStore';
 import AddressBookActions from 'app/actions/AddressBookActions';
 
+/** Helper function to get state from flux store */
 function getStateFromStores() {
   return AddressBookStore.getState();
 }
 
 export default class ContactsList extends Component {
+  /** Constructor */
   constructor(props) {
     super(props);
     
@@ -21,14 +23,17 @@ export default class ContactsList extends Component {
     };
   }
   
+  /** React Component Did Mount */
   componentDidMount() {
     AddressBookStore.listen(this.onAddressBookStoreChange);
   }
   
+  /** React Component Did Unmount */
   componentDidUnmount() {
     AddressBookStore.unlisten(this.onAddressBookStoreChange);
   }
   
+  /** React Render */
   render() {
     var self = this;
     
@@ -61,6 +66,7 @@ export default class ContactsList extends Component {
     );
   }
   
+  /** Event Handlers */
   onAddressBookStoreChange() {
     console.log('AddressBookStore changed, updating ContactsList view');
     this.setState(getStateFromStores());
