@@ -55,7 +55,7 @@ export default class ContactsList extends Component {
         if(this.state.contacts.length < 1) {
           return (
           <div style={{ textAlign: 'center'}}>
-          You are very lonely :(
+          Address Book is Empty
           </div>
           );
         }
