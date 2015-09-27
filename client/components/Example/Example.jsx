@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Component from 'app/components';
-import './Example.less';
+import './Example.scss';
 
 export default class Example extends Component {
   render() {

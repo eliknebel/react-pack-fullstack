@@ -4,7 +4,7 @@ import Router from 'react-router';
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 
 /** Import app styles */
-import './app.less';
+import './app.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
 /** Import global JS Libraries*/

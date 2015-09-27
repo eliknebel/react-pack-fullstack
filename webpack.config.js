@@ -13,7 +13,7 @@ module.exports = {
             { test: /\.json$/,   loader: "babel-loader" },
             { test: /\.coffee$/, loader: "coffee-loader" },
             { test: /\.css$/,    loader: "style-loader!css-loader" },
-            { test: /\.less$/,   loader: "style-loader!css-loader!less-loader" },
+            { test: /\.scss$/,   loader: "style-loader!css-loader!sass-loader" },
             { test: /\.jade$/,   loader: "jade-loader?self" },
             { test: /\.png$/,    loader: "url-loader?prefix=img/&limit=5000" },
             { test: /\.jpg$/,    loader: "url-loader?prefix=img/&limit=5000" },

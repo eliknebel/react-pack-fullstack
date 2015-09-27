@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Component from 'app/components';
-import './ContentPanel.less';
+import './ContentPanel.scss';
 
 import ContactCard from 'components/ContactCard';
 import ContactsList from 'components/ContactsList';

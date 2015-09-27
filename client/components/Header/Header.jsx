@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Component from 'app/components';
-import './Header.less';
+import './Header.scss';
 
 export default class Header extends Component {
   render() {

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Component from 'app/components';
-import './ContactsList.less';
+import './ContactsList.scss';
 
 import FluxyMixin from 'alt/mixins/FluxyMixin';
 import AddressBookStore from 'app/stores/AddressBookStore';

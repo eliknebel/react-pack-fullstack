@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Component from 'app/components';
-import './ContactCard.less';
+import './ContactCard.scss';
 
 import AddressBookActions from 'app/actions/AddressBookActions';
 
