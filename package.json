@@ -1,6 +1,5 @@
 {
   "name": "react-pack-fullstack",
-  "private": true,
   "version": "0.0.0",
   "description": "A simple react/sails starter stack that uses npm and webpack",
   "keywords": [],
@@ -58,10 +57,10 @@
     "start": "cp ./client/index.html ./index.html && webpack && node app.js"
   },
   "author": "Eli Knebel",
-  "license": "",
+  "license": "MIT",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "http://bitbucket.org/EliKnebel/react-pack-fullstack"
+    "url": "https://github.com/EliKnebel/react-pack-fullstack"
   }
 }
