@@ -34,5 +34,7 @@ module.exports = {
   // log: {
   //   level: "silent"
   // }
+  
+  clientLocation: "/app/bundle.js"
 
 };

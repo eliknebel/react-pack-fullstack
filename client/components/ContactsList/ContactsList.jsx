@@ -29,7 +29,7 @@ export default class ContactsList extends Component {
   }
   
   /** React Component Did Unmount */
-  componentDidUnmount() {
+  componentWillUnmount() {
     AddressBookStore.unlisten(this.onAddressBookStoreChange);
   }
   

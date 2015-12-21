@@ -21,5 +21,5 @@ module.exports = {
   //   connection: 'someMongodbServer'
   // }
   
-  clientLocation: "/app/bundle.js"
+  clientLocation: "http://localhost:8080/app/bundle.js"
 };

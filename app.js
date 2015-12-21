@@ -22,6 +22,9 @@
 // no matter where we actually lift from.
 process.chdir(__dirname);
 
+// polyfills
+require('es6-promise').polyfill();
+
 // Ensure a "sails" can be located:
 (function() {
   var sails;

@@ -1,16 +1,18 @@
 module.exports = {
-    entry: {
-        app: "./client/app.jsx"
-    },
+    debug: true,
+    devtool: 'inline-source-map',
+    entry: [
+        "./client/app.jsx"
+    ],
     output: {
         path: './assets/app',
         filename: 'bundle.js',
-        publicPath: '/app/'
+        publicPath: 'http://localhost:8080/app/'
     },
     module: {
         loaders: [
-            { test: /\.js$/,   loader: "babel?plugins=jsx-control-statements/babel" },
-            { test: /\.jsx$/,   loader: "babel?plugins=jsx-control-statements/babel" },
+            { test: /\.js$/,     loaders: ["react-hot", "babel?plugins=jsx-control-statements/babel"], exclude: /node_modules/ },
+            { test: /\.jsx$/,    loaders: ["react-hot", "babel?plugins=jsx-control-statements/babel"], exclude: /node_modules/ },
             { test: /\.json$/,   loader: "babel?plugins=jsx-control-statements/babel" },
             { test: /\.coffee$/, loader: "coffee" },
             { test: /\.css$/,    loader: "style!css" },
