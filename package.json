@@ -1,8 +1,7 @@
 {
-  "name": "ubiqn-files",
-  "private": true,
-  "version": "0.0.0",
-  "description": "A tag based file system",
+  "name": "react-pack-fullstack",
+  "version": "1.0.0",
+  "description": "A fullstack javascript app that uses React, Alt, and Sails.",
   "keywords": [],
   "devDependencies": {
     "babel": "^5.8.23",
