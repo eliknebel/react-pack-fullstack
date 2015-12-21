@@ -11,3 +11,5 @@ Install dependencies: `npm install`
 Build application: `npm run build`
 
 Watch application: `npm run watch`
+
+Navigate to `http://localhost:1337` to run the demo application
