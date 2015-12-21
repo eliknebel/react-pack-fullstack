@@ -1,6 +1,6 @@
 {
   "name": "react-pack-fullstack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A fullstack javascript app that uses React, Alt, and Sails.",
   "keywords": [],
   "devDependencies": {
